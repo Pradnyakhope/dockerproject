@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git 'https://github.com/ReyazShaik/dockerproject.git'
+                git 'https://github.com/Pradnyakhope/dockerproject.git'
             }
         }
         stage('build') {
@@ -19,7 +19,7 @@ pipeline {
         }
         stage('push') {
             steps {
-                sh 'docker login -u reyadocker -p $password'
+                sh 'docker login -u pradnyadk -p @#Dockerhub2025!'
                 sh 'docker push $repo'
             }
         }
